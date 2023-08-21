@@ -1,0 +1,666 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="emYPCkf6jLXEngOP5r2ZOsIMHnuOm-dOHKeIsTL7Ev4" />
+<title>Hetvika Educational Academy</title>
+<link href="assets/img/favicon.jpg" rel="icon">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="css/educational.css" rel="stylesheet" type="text/css">
+<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+<link href="css/animated.css" rel="stylesheet" type="text/css">
+<link href="assets/vendor/venobox/venobox.css" rel="stylesheet" type="text/css">
+<link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+ <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<style>
+.about {
+  padding-bottom: 30px;
+}
+
+.about .container {
+  box-shadow: 0 5px 25px 0 rgba(214, 215, 216, 0.6);
+}
+
+.about .video-box img {
+  padding: 15px 0;
+}
+
+.about .section-title p {
+  text-align: left;
+  font-style: italic;
+  color: #666;
+}
+
+.about .about-content {
+  padding: 40px;
+}
+
+.about .icon-box + .icon-box {
+  margin-top: 40px;
+}
+
+.about .icon-box .icon {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  background: #f1f7fb;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+
+.about .icon-box .icon i {
+  color: #428bca;
+  font-size: 32px;
+}
+
+.about .icon-box:hover .icon {
+  background: #428bca;
+}
+
+.about .icon-box:hover .icon i {
+  color: #fff;
+}
+
+.about .icon-box .title {
+  margin-left: 95px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.about .icon-box .title a {
+  color: #343a40;
+  transition: 0.3s;
+}
+
+.about .icon-box .title a:hover {
+  color: #428bca;
+}
+
+.about .icon-box .description {
+  margin-left: 95px;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+.about .video-box {
+  position: relative;
+}
+
+.about .play-btn {
+  width: 94px;
+  height: 94px;
+  background: radial-gradient(#428bca 50%, rgba(66, 139, 202, 0.4) 52%);
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  left: calc(50% - 47px);
+  top: calc(50% - 47px);
+  overflow: hidden;
+}
+
+.about .play-btn::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 100;
+  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.about .play-btn::before {
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation: pulsate-btn 2s;
+  animation: pulsate-btn 2s;
+  -webkit-animation-direction: forwards;
+  animation-direction: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps;
+  animation-timing-function: steps;
+  opacity: 1;
+  border-radius: 50%;
+  border: 5px solid rgba(66, 139, 202, 0.7);
+  top: -15%;
+  left: -15%;
+  background: rgba(198, 16, 0, 0);
+}
+
+.about .play-btn:hover::after {
+  border-left: 15px solid #428bca;
+  transform: scale(20);
+}
+
+.about .play-btn:hover::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border: none;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 200;
+  -webkit-animation: none;
+  animation: none;
+  border-radius: 0;
+}
+
+@-webkit-keyframes pulsate-btn {
+  0% {
+    transform: scale(0.6, 0.6);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+
+@keyframes pulsate-btn {
+  0% {
+    transform: scale(0.6, 0.6);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# About Lists
+--------------------------------------------------------------*/
+.about-lists {
+  padding: 40px;
+}
+
+.about-lists .row {
+  overflow: hidden;
+}
+
+.about-lists .content-item {
+  padding: 40px;
+  border-left: 1px solid #d9e8f4;
+  border-bottom: 1px solid #d9e8f4;
+  margin: -1px;
+}
+
+.about-lists .content-item span {
+  display: block;
+  font-size: 24px;
+  font-weight: 400;
+  color: #9eccf4;
+}
+
+.about-lists .content-item h4 {
+  font-size: 28px;
+  font-weight: 400;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.about-lists .content-item p {
+  color: #aaaaaa;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .about-lists .content-item {
+    padding: 40px 0;
+  }
+}
+.back-to-top {
+  position: fixed;
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  right: 15px;
+  bottom: 15px;
+  background: #428bca;
+  color: #fff;
+  transition: display 0.5s ease-in-out;
+  z-index: 99999;
+}
+
+.back-to-top i {
+  font-size: 24px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+.back-to-top:hover {
+  color: #fff;
+  background: #629fd3;
+  transition: background 0.2s ease-in-out;
+}
+
+#footer {
+  background: #587187;
+  padding: 0 0 30px 0;
+  color: #fff;
+  font-size: 14px;
+}
+
+#footer .footer-top {
+  background: #5c768d;
+  border-top: 1px solid #768fa6;
+  border-bottom: 1px solid #67839c;
+  padding: 60px 0 30px 0;
+}
+
+#footer .footer-top .footer-info {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-info h3 {
+  font-size: 24px;
+  margin: 0 0 20px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-weight: 700;
+}
+
+#footer .footer-top .footer-info p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+}
+
+#footer .footer-top .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #768fa6;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .footer-top .social-links a:hover {
+  background: #428bca;
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer .footer-top h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: #9eccf4;
+  font-size: 18px;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+  color: #fff;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+  color: #9eccf4;
+}
+
+#footer .footer-top .footer-newsletter form {
+  margin-top: 30px;
+  background: #fff;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 4;
+}
+
+#footer .footer-top .footer-newsletter form input[type="email"] {
+  border: 0;
+  padding: 4px;
+  width: calc(100% - 110px);
+}
+
+#footer .footer-top .footer-newsletter form input[type="submit"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px;
+  background: #428bca;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 4;
+}
+
+#footer .footer-top .footer-newsletter form input[type="submit"]:hover {
+  background: #5295ce;
+}
+
+#footer .copyright {
+  text-align: center;
+  padding-top: 30px;
+}
+
+#footer .credits {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+}
+
+#footer .credits a {
+  color: #9eccf4;
+}
+
+</style>
+
+</head>
+
+<body>
+<div class="container-fluid" style="padding-left:0px; padding-right:0px;">
+<div class="container-fluid bg-dark" >
+<!--<div class="admission"><marquee width="30%" direction="right" style="font-size:14px;">WE ARE ONE BEST SOLUTION FOR EDUCATION</marquee> &nbsp;&nbsp;ADMISSION ENQUIRY <br/> CONTACT US: +91 96660 65640 </div>-->
+<!--<div class="header_content">
+<div class="admission">For Admission Enquiry: +91 96660 65640 </div>
+<div class="fa fa-facebook text-white"></div>
+</div>-->
+<!--<ul class="nav justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link fa fa-facebook" href="https://www.facebook.com/hetvika.lukka.9"></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link fa fa-instagram" href="https://www.instagram.com/hetvikalukka/"></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link fa fa-envelope" href="mailto:info@hetvikaeducationalacademy.co.in"></a>
+  </li>
+</ul>
+<nav class="nav" style="position:absolute; top:-2px; font-family: 'Heebo', sans-serif; font-size:13px;width:90%;">
+  <a class="nav-link text-white" href="#">For Admissions: +91 96660 65640</a>
+  <a class="nav-link text-white small_device" href="#" style="width:76%;"><marquee direction="left">Tuition and Coaching academy where Success and Subject delivered with passion</marquee></a>
+</nav>-->
+<div class="row">
+<div class="col-md-3" style="margin:auto;">
+<a class="nav-link text-white" href="#">For Admissions: +91 96660 65640</a>
+</div>
+<div class="col-md-7">
+<a class="nav-link text-white small_device" href="#"><marquee direction="left">Tuition and Coaching academy where Success and Subject delivered with passion</marquee></a>
+</div>
+<div class="col-md-2" style="margin:auto;">
+<a class="nav-link fa fa-facebook" href="https://www.facebook.com/Hetvika-Educational-Academy-101451784806515/"></a>
+<a class="nav-link fa fa-instagram" href="https://www.instagram.com/hetvikalukka/"></a>
+<a class="nav-link fa fa-envelope" href="mailto:info@hetvikaeducationalacademy.co.in"></a>
+</div>
+</div>
+
+</div><!--- Container-fulid--->
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="index.html"><img src="media/images/HE2.jpg" width="100" height="100" alt="Hetvika Educational Academy"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon "></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto" style="font-size:100%; font-weight:bolder;">
+      <li class="nav-item active">
+        <a class="nav-link changing-padding about_us" href="index.html" style="color:#624dd6; font-family: 'Heebo', sans-serif;">About Us <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link changing-padding tuition" href="Tuition.html" style="color:#51e29a;font-family: 'Heebo', sans-serif;">Tuition and Coaching</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link changing-padding testimonials" href="Testimional.html" style="color:#dd4f75;font-family: 'Heebo', sans-serif;">Testimonials</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link changing-padding gallery" href="Gallery.html" style="color:#88d914;font-family: 'Heebo', sans-serif;">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link changing-padding contact" href="Contact.html" style="color:#10b6fe;font-family: 'Heebo', sans-serif;">Contact</a>
+      </li>
+      <!--<li class="nav-item">
+      <a href="mailto:info@hetvikaeducationalacademy.co.in" class="fa fa-envelope nav-link changing-padding" style="margin-top: 6px;margin-bottom: 6px;"></a>
+      </li>
+      <li class="nav-item">
+      <a href="#"  class="fa fa-facebook nav-link changing-padding" style="margin-top: 6px;margin-bottom: 6px;"></a>
+      </li>-->
+   </ul>
+  </div>
+</nav>
+</div><!----main container-fulid-->
+
+<div class="container-fluid" style="padding-left:0px; padding-right:0px;">
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="media/images/banner1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block boxModel">
+          <h5 class="animated fadeInLeft text-left">THE GOOD TEACHER EXPLAINS.</h5>
+          <h5 class="animated fadeInLeft text-left">THE MEDICORE TEACHERS TELLS.</h5>
+          <h5 class="animated fadeInLeft text-left">THE SUPERIOR TEACHER DEMOSTRATES.</h5>
+          <h5 class="animated fadeInLeft text-left">WE AT HETVIKA EDUCATIONAL ACADEMY INSPIRES.</h5>
+          
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="media/images/Untitled-2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block boxModel">
+          <h5 class="animated fadeInLeft text-left">WE TEACH THE WAY WE WOULD WANT TO BE TAUGHT.</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="media/images/Untitled-3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block boxModel">
+         <h5 class="animated fadeInLeft text-left">WE ADOPTED THE ROLE OF FACILITATOR NOT CONTENT PROVIDER.</h5>
+        </div>
+      </div>
+    </div>
+    </div>
+</div><!-----carosuell end--->
+
+<div class="container-fluid" style="padding-right: 0px;padding-left: 0px;">
+          <div class="jumbotron" style="border-radius: 0px; background: #3d6aa5; color: white;margin-bottom:0px;">
+          <div class="row">
+              <div class="col-md-3" style="background: #fff; color:#4096ee; box-shadow: 2px 18px 17px black;text-align:center; padding-top: 12px; margin:auto;font-family: 'Heebo', sans-serif;">
+                  <h5>OUR VISION <!--<strong style="color:#000;">TEACHING,TRAINING</strong>. We make parents dreams fulfill.--></h5>              </div>
+              <div class="col-md-9" style="text-align: justify; font-family: 'Heebo', sans-serif;">
+                  <div>
+                  Hetvika Educational Academy is committed to the vision of providing the passionate and conceptual teaching to the students for all-round development of each and every student there by contributing to the intellectual and emotional growth with discipline.<br> Our aim is to provide the best platform to the students where values are redefined, skills are polished, goals are set up and achieved, and to get success, sky is the limit. So our students are allowed to fly with flying colors to get success which is at sky. </div>
+              </div>
+          </div>
+ </div>
+ </div>
+  <div class="container-fluid backgroundImage about" id="about">
+          <div class="row">
+              <div class="col-md-6 ">
+                  <h1>We Are The Best Solution For your Childrens.</h1>
+                  <p class="text-justify">Greetings, Dear  Parents we are glad to invite you to HETVIKA EDUCATIONAL ACADEMY.We provide technologically advanced tuition and coaching to help our students learn with enthusiasm. By using modern methods of teaching, we ensure our students are excited to learn new things everyday. Our students will be passionate about learning,instead of feeling pressured and stressed, as HETVIKA EDUCATIONAL ACADEMY is an ideal space for the development of every student.</p>
+              </div>
+              
+          <div class="col-lg-6 video-box">
+            <img src="assets/img/vedio_poster.jpg" class="img-fluid" alt="">
+            <a href="https://www.youtube.com/watch?v=Qwet3bCdxJ4&feature=youtu.be" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+            <!--<video width="320" height="240" poster="assets/img/vedio poster.jpg" controls style="margin-top:10px;">
+  <source src="media/Video/Adverstiment.mp4" type="video/mp4" >
+</video>-->
+          </div>
+          </div>
+    </div>
+
+<!---backgroundImage---Close--->
+ <div class="container-fluid setBackground"><br>
+        <h3 class="Client1">About Me</h3><br>
+            
+            <img src="media/images/s_profile_2.jpg" class="Imagestyle">
+            <p class="ClientText text-justify">I believe education is extremely important for a persons growth. I have supported my graduation by teaching students of younger classes on part time basis. As I understood how the most complex topics if taught the right way can be understand by students,irrespective of their grasping power is. My zeal to learn and teach made me a teacher. I set up <strong class="text-info">HETVIKA EDUCATIONAL ACADEMY in 2019</strong> after realizing how a inspiring teacher can transform a students life. I trust any student can achieve success through persistence practice and discipline. Nobody is born with talents, they need to work tirelessly and through practice achieve perfection. I welcome you to know about our teaching methodologies, amenities and ultimately observe how your child will be shaped for success at HETVIKA EDUCATIONAL ACADEMY.</p>
+        </div><!---client close--->         
+<!--<div class="container-fulid" >
+            <div class="jumbotron" style="border-radius: 0px; background: #000; color: white;margin-bottom: 0px;">
+                <div class="row" style="margin-right:0px; margin-left:0px;">
+                    <div class="col-md-3">
+                        <img src="media/images/small66X66.png">
+                        <p style="font-size:13px;">Praesent vel rutrum purus. Nam vel dui eu risus duis dignissim dignissim area Suspen derocongueconsequat.Fusce sit amet urna iat.Praesent vel rutrum purus. Nam vel dui eu risus.</p>
+                    </div>
+                    <div class="col-md-3">
+                        
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <h3 style="font-weight:bold;font-family: 'Heebo', sans-serif;">Contact Us</h3>
+                        <p class="fa fa-map-marker" style="font-size:16px;">&nbsp;<span style="font-family: 'Heebo', sans-serif;">SHADNAGAR 509216</span></p><br>
+                        <p class="fa fa-phone" style="font-size:16px;">&nbsp;<span style="font-family: 'Heebo', sans-serif;">+91 9666065640 / +91 9493928254</span></p>
+                        <br>
+                         <p class="fa fa-envelope" style="font-size:16px;">&nbsp;<span style="font-family: 'Heebo', sans-serif;">info@hetvikaeducationalacademy.co.in</span></p>
+                                               
+                    </div>
+                </div>
+              </div>
+               <div class="text-center bg-primary text-white" style="font-family: 'Heebo', sans-serif;">All &copy; copy rights are reserved Hetvika Educational Academy</div>
+        </div>-->
+        <!--<div class="container-fluid" style="padding-right: 0px;padding-left: 0px;">
+       
+        </div>-->
+<!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 footer-info">
+            <img src="media/images/small66X66.png">
+            <p>
+              SHADNAGAR 509216,<br><br>
+              <strong>Phone:</strong> +91 9666065640 / +91 9493928254<br>
+              <strong>Email:</strong> info@hetvikaeducationalacademy.co.in<br>
+            </p>
+            <div class="social-links mt-3">
+              <a href="https://www.facebook.com/Hetvika-Educational-Academy-101451784806515/" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="https://www.instagram.com/hetvikalukka/" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Tuition.html">Tuition and Coaching</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Testimional.html">Testimional</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Gallery.html">Gallery</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>Why to Join Us</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">ONLY CONCEPTUAL TEACHING</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">SPECIAL CARE FOR SLOW LEARNERS</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">DAILY MOTIVATIONAL CLASSES</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">SMART CLASSES</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">COMMUNICATION SKILLS DEVELOPMENT</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">SEMINARS BY EVERY STUDENT</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">PRACTICALS BY STUDENTS</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">WEEKLY TEST</a></li>
+            </ul>
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Hetvika Educational Academy</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/ -->
+        Designed by <a href="">Hetvika Educational Academy</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+  
+<script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
+

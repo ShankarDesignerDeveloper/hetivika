@@ -1,0 +1,375 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="emYPCkf6jLXEngOP5r2ZOsIMHnuOm-dOHKeIsTL7Ev4" />
+<title>Hetvika Educational Academy</title>
+<link href="assets/img/favicon.jpg" rel="icon">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="css/educational.css" rel="stylesheet" type="text/css">
+<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+<link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+<link href="css/animated.css" rel="stylesheet" type="text/css">
+ <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<style>
+.School_background{background:#09645f; color:#fff;padding-top:20px;}
+.Intermidate_background{background:#fca40c; color:#fff;padding-top:20px;}
+.Pharmacy_background{background:#0e96cc; color:#fff;padding-top:20px;}
+.back-to-top {
+  position: fixed;
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  right: 15px;
+  bottom: 15px;
+  background: #428bca;
+  color: #fff;
+  transition: display 0.5s ease-in-out;
+  z-index: 99999;
+}
+
+.back-to-top i {
+  font-size: 24px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+.back-to-top:hover {
+  color: #fff;
+  background: #629fd3;
+  transition: background 0.2s ease-in-out;
+}
+
+#footer {
+  background: #587187;
+  padding: 0 0 30px 0;
+  color: #fff;
+  font-size: 14px;
+}
+
+#footer .footer-top {
+  background: #5c768d;
+  border-top: 1px solid #768fa6;
+  border-bottom: 1px solid #67839c;
+  padding: 60px 0 30px 0;
+}
+
+#footer .footer-top .footer-info {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-info h3 {
+  font-size: 24px;
+  margin: 0 0 20px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-weight: 700;
+}
+
+#footer .footer-top .footer-info p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+}
+
+#footer .footer-top .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #768fa6;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .footer-top .social-links a:hover {
+  background: #428bca;
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer .footer-top h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: #9eccf4;
+  font-size: 18px;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+  color: #fff;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+  color: #9eccf4;
+}
+
+#footer .footer-top .footer-newsletter form {
+  margin-top: 30px;
+  background: #fff;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 4;
+}
+
+#footer .footer-top .footer-newsletter form input[type="email"] {
+  border: 0;
+  padding: 4px;
+  width: calc(100% - 110px);
+}
+
+#footer .footer-top .footer-newsletter form input[type="submit"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px;
+  background: #428bca;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 4;
+}
+
+#footer .footer-top .footer-newsletter form input[type="submit"]:hover {
+  background: #5295ce;
+}
+
+#footer .copyright {
+  text-align: center;
+  padding-top: 30px;
+}
+
+#footer .credits {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+}
+
+#footer .credits a {
+  color: #9eccf4;
+}
+</style>
+</head>
+
+<body>
+<div class="container-fluid" style="padding-left:0px; padding-right:0px;">
+<div class="container-fluid bg-dark" >
+<div class="row">
+<div class="col-md-3" style="margin:auto;">
+<a class="nav-link text-white" href="#">For Admissions: +91 96660 65640</a>
+</div>
+<div class="col-md-7">
+<a class="nav-link text-white small_device" href="#"><marquee direction="left">Tuition and Coaching academy where Success and Subject delivered with passion</marquee></a>
+</div>
+<div class="col-md-2" style="margin:auto;">
+<a class="nav-link fa fa-facebook" href="https://www.facebook.com/Hetvika-Educational-Academy-101451784806515/"></a>
+<a class="nav-link fa fa-instagram" href="https://www.instagram.com/hetvikalukka/"></a>
+<a class="nav-link fa fa-envelope" href="mailto:info@hetvikaeducationalacademy.co.in"></a>
+</div>
+</div>
+</div><!--- Container-fulid--->
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="index.html"><img src="media/images/HE2.jpg" width="100" height="100" alt="Hetvika Educational Academy"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon "></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto" style="font-size:100%; font-weight:bolder;">
+      <li class="nav-item">
+        <a class="nav-link changing-padding about_us" href="index.html" style="color:#624dd6;font-family: 'Heebo', sans-serif;">About Us <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link changing-padding tuition" href="Tuition.html" style="color:#51e29a;font-family: 'Heebo', sans-serif;">Tuition and Coaching</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link changing-padding testimonials" href="Testimional.html" style="color:#dd4f75;font-family: 'Heebo', sans-serif;">Testimonials</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link changing-padding gallery" href="Gallery.html" style="color:#88d914;font-family: 'Heebo', sans-serif;">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link changing-padding contact" href="Contact.html" style="color:#10b6fe;font-family: 'Heebo', sans-serif;">Contact</a>
+      </li>
+   </ul>
+  </div>
+</nav>
+</div><!----main container-fulid-->
+<div class="container-fluid setBackground">
+<br/>
+        <h3 class="Client2 animated bounceInRight">Tuition And Coachings</h3><br>
+            <p class="ClientText2 animated bounceInLeft">We can make your dreams and goals success.</p>
+</div><br><!---client close---> 
+<div class="container">
+<div class="row">
+<div class="col-md-4 border School_background">
+<h4><u><center>SCHOOL</center></u></h2>
+<p>Tuitions undertaken for Class I to X <strong>ALL SUBJECTS</strong>.</p>
+<p>Class starts from 01-Jan-2020.</p>
+</div>
+<div class="col-md-4 border Intermidate_background">
+<h4><u><center>INTERMEDIATE & DEGREE</center></u></h2>
+<p>Tuitions undertaken for subjects <strong>BOTANY, ZOOLOGY, PHYSICS, CHEMISTRY AND ENGLISH.</strong>.</p>
+<p>Class starts from 01-Jan-2020.</p>
+</div>
+<div class="col-md-4 border Pharmacy_background">
+<h4><u><center>B.PHARMACY & M.PHARMACY</center></u></h2>
+<p>Tuitions for <strong>ALL SUBJECTS</strong> and <strong>special classes for Job oriented training including carrier guidance and how to face interviews.</strong></p>
+<p>Class starts from 01-Jan-2020.</p>
+</div>
+</div>
+<!--<h4><u>Fee Details</u></h4>
+<p>Please drop email to <a href="mailto:info@hetvikaeducationalacademy.co.in">info@hetvikaeducationalacademy.co.in</a> or call directly to Mr. Shiv Shankar(+91 96660 65640)</p>-->
+</div><br>
+<!--<div class="container-fulid" >
+            <div class="jumbotron" style="border-radius: 0px; background: #000; color: white;margin-bottom: 0px;">
+                <div class="row" style="margin-right:0px; margin-left:0px;">
+                    <div class="col-md-3">
+                        <img src="media/images/small66X66.png">
+                        <p style="font-size:13px;">Praesent vel rutrum purus. Nam vel dui eu risus duis dignissim dignissim area Suspen derocongueconsequat.Fusce sit amet urna iat.Praesent vel rutrum purus. Nam vel dui eu risus.</p>
+                    </div>
+                    <div class="col-md-3">
+                        
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <h3 style="font-weight:bold;">Meet Us</h3>
+                        <p class="fa fa-map-marker" style="font-size:16px;">&nbsp;<span style="font-family: 'Heebo', sans-serif;">SHADNAGAR 509216</span></p><br>
+                        <p class="fa fa-phone" style="font-size:16px;">&nbsp;<span style="font-family: 'Heebo', sans-serif;">+91 9666065640 / +91 9493928254</span></p>
+                        <br>
+                         <p class="fa fa-envelope" style="font-size:16px;">&nbsp;<span style="font-family: 'Heebo', sans-serif;">info@hetvikaeducationalacademy.co.in</span></p>
+                        <br>-->
+                        <!--<p class="fa fa-fax" style="font-size:16px;">&nbsp;6295-2867</p>-->
+                    <!--</div>
+                </div>
+              </div>
+              <div class="text-center bg-primary text-white" style="font-family: 'Heebo', sans-serif;">All &copy; copy rights are reserved Hetvika Educational Academy</div>
+        </div>-->
+        <!-- ======= Footer ======= -->
+ <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 footer-info">
+            <img src="media/images/small66X66.png">
+            <p>
+              SHADNAGAR 509216,<br><br>
+              <strong>Phone:</strong> +91 9666065640 / +91 9493928254<br>
+              <strong>Email:</strong> info@hetvikaeducationalacademy.co.in<br>
+            </p>
+            <div class="social-links mt-3">
+              <a href="https://www.facebook.com/Hetvika-Educational-Academy-101451784806515/" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="https://www.instagram.com/hetvikalukka/" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Tuition.html">Tuition and Coaching</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Testimional.html">Testimional</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Gallery.html">Gallery</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>Why to Join Us</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">ONLY CONCEPTUAL TEACHING</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">SPECIAL CARE FOR SLOW LEARNERS</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">DAILY MOTIVATIONAL CLASSES</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">SMART CLASSES</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">COMMUNICATION SKILLS DEVELOPMENT</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">SEMINARS BY EVERY STUDENT</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">PRACTICALS BY STUDENTS</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">WEEKLY TEST</a></li>
+            </ul>
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Hetvika Educational Academy</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/ -->
+        Designed by <a href="">Hetvika Educational Academy</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+  
+<script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
